@@ -1,0 +1,24 @@
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+    <h1>당신의 성별을 맞혀볼게요</h1>
+    <h3>"이걸 누가 외우고 다녀?"하는 정보와 극히 주관적으로 판단해야하는 정보들이 섞여있습니다.</h3>
+
+    <form method="POST", action="getReport"> 
+    <b>
+        장발/단발 : <input type="number", step='1', name='long_hair', placeholder="장발=1, 그 외=0"><br>
+        이마 넓이 : <input type="number", step='0.1', name='forehead_width_cm', placeholder="단위기준은 cm입니다"><br>
+        이마 길이 : <input type="number", step='0.1', name='forehead_height_cm', placeholder="단위기준은 cm입니다"><br>
+        콧볼 크기 : <input type="number", step='1', name='nose_wide', placeholder="크다=1, 아니다=0"><br>
+        코 길이 : <input type="number", step='1', name='nose_long', placeholder="길다=1, 아니다=0"><br>
+        입술 두께 : <input type="number", step='1', name='lips_thin', placeholder="두껍다=1, 아니다=0"><br>
+        코, 입술 사이의 거리 : <input type="number", step='1', name='distance_nose_to_lip_long', placeholder="인중이 길다=1, 아니다=0"><br>
+    </b>
+        <input type="submit", value="제출하기">
+    </form>
+    </body>
+</html>

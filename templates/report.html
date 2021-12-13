@@ -1,0 +1,18 @@
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>입력 값 확인</h1>
+    장발/단발 : {{gender}}<br>
+    이마 넓이 : {{forehead_width_cm}}
+    이마 길이 : {{forehead_height_cm}}
+    콧볼 크기 : {{nose_wide}}
+    코 길이 : {{nose_long}}
+    입술 두께 : {{lips_thin}}
+    코, 입술 사이의 거리 :{{distance_nose_to_lip_long}}
+
+</body>
+</html>
